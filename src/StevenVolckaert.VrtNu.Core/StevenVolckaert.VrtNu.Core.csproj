@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <Copyright>Copyright (c) 2017 Steven Volckaert</Copyright>
+      <TargetFramework>netstandard1.6</TargetFramework>
+      <RootNamespace>StevenVolckaert.VrtNu</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StevenVolckaert.Core" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>

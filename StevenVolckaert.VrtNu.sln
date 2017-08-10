@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{F97CE750-0D87-401E-8DC5-94BC1AD34365}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AA5E3A56-3783-4156-A246-2AF906990976}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StevenVolckaert.VrtNu.Core", "src\StevenVolckaert.VrtNu.Core\StevenVolckaert.VrtNu.Core.csproj", "{9C8538CC-69A3-4CE0-B21F-DF8055BD342D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StevenVolckaert.VrtNu.Android", "src\StevenVolckaert.VrtNu.Android\StevenVolckaert.VrtNu.Android.csproj", "{61C2129F-5AE1-4173-902C-68BB065CA6A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C8538CC-69A3-4CE0-B21F-DF8055BD342D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8538CC-69A3-4CE0-B21F-DF8055BD342D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8538CC-69A3-4CE0-B21F-DF8055BD342D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8538CC-69A3-4CE0-B21F-DF8055BD342D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61C2129F-5AE1-4173-902C-68BB065CA6A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C2129F-5AE1-4173-902C-68BB065CA6A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C2129F-5AE1-4173-902C-68BB065CA6A3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{61C2129F-5AE1-4173-902C-68BB065CA6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C2129F-5AE1-4173-902C-68BB065CA6A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61C2129F-5AE1-4173-902C-68BB065CA6A3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C8538CC-69A3-4CE0-B21F-DF8055BD342D} = {AA5E3A56-3783-4156-A246-2AF906990976}
+		{61C2129F-5AE1-4173-902C-68BB065CA6A3} = {AA5E3A56-3783-4156-A246-2AF906990976}
+	EndGlobalSection
+EndGlobal
