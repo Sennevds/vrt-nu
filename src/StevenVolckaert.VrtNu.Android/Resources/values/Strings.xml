@@ -2,5 +2,5 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">VRT NU</string>
-    <string name="BrowseViewTitle">Browse view. Hi from Steven!</string>
+    <string name="BrowseViewTitle">VRT NU</string>
 </resources>
