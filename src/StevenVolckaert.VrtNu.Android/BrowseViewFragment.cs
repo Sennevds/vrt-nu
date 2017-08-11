@@ -30,7 +30,7 @@
 
         private void InitializeUIElements()
         {
-            Title = (GetString(Resource.String.BrowseViewTitle));
+            Title = GetString(Resource.String.BrowseViewTitle);
             HeadersState = HeadersEnabled;
             HeadersTransitionOnBackEnabled = true;
             //BrandColor = Resources.GetColor(Resource.Color.fastlane_background);
