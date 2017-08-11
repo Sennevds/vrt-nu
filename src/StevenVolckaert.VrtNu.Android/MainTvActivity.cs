@@ -11,7 +11,6 @@
         , Theme = "@style/Theme.Leanback"
         , ScreenOrientation = ScreenOrientation.Landscape
         , ConfigurationChanges = ConfigChanges.Keyboard | ConfigChanges.KeyboardHidden | ConfigChanges.Navigation
-        , MainLauncher = true
     )]
     [IntentFilter(new[] { Intent.ActionMain }, Categories = new string[] { Intent.CategoryLeanbackLauncher })]
     public class MainTvActivity : Activity
