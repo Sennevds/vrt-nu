@@ -10,7 +10,7 @@
         , Icon = "@drawable/vrt_nu_banner"
         , Theme = "@style/Theme.Leanback"
         , ScreenOrientation = ScreenOrientation.Landscape
-        //, MainLauncher = true
+        , MainLauncher = true
     )]
     [IntentFilter(new[] { Intent.ActionMain }, Categories = new string[] { Intent.CategoryLeanbackLauncher })]
     public class MainTvActivity : Activity
