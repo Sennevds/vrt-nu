@@ -22,3 +22,5 @@ using Android;
 // TODO Replace string literals with constants provided by Xamarin.Android. Steven Volckaert. August 11, 2017.
 [assembly: UsesFeature("android.hardware.touchscreen", Required = false)]
 [assembly: UsesFeature("android.software.leanback", Required = false)]
+
+[assembly: Application(Banner = "@drawable/vrt_nu_banner")]
