@@ -79,6 +79,9 @@
     <Reference Include="Xamarin.Android.Support.v17.Leanback, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Android.Support.v17.Leanback.25.4.0.1\lib\MonoAndroid70\Xamarin.Android.Support.v17.Leanback.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.CardView.25.4.0.1\lib\MonoAndroid70\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Android.Support.v7.RecyclerView.25.4.0.1\lib\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
     </Reference>
@@ -86,6 +89,7 @@
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="BrowseViewFragment.cs" />
+    <Compile Include="MainTvActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -96,7 +100,7 @@
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml">
+    <AndroidResource Include="Resources\layout\MainTvLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -142,6 +146,7 @@
     <Error Condition="!Exists('..\..\packages\Xamarin.Android.Support.Fragment.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Android.Support.Fragment.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets'))" />
     <Error Condition="!Exists('..\..\packages\Xamarin.Android.Support.v7.RecyclerView.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Android.Support.v7.RecyclerView.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.targets'))" />
     <Error Condition="!Exists('..\..\packages\Xamarin.Android.Support.v17.Leanback.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v17.Leanback.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Android.Support.v17.Leanback.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v17.Leanback.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Xamarin.Android.Support.v7.CardView.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Android.Support.v7.CardView.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets'))" />
   </Target>
   <Import Project="..\..\packages\Xamarin.Android.Support.Core.UI.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.Core.UI.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Core.UI.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.Core.UI.targets')" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Core.Utils.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.Core.Utils.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Core.Utils.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.Core.Utils.targets')" />
@@ -149,6 +154,7 @@
   <Import Project="..\..\packages\Xamarin.Android.Support.Fragment.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Fragment.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets')" />
   <Import Project="..\..\packages\Xamarin.Android.Support.v7.RecyclerView.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.v7.RecyclerView.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.targets')" />
   <Import Project="..\..\packages\Xamarin.Android.Support.v17.Leanback.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v17.Leanback.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.v17.Leanback.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v17.Leanback.targets')" />
+  <Import Project="..\..\packages\Xamarin.Android.Support.v7.CardView.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.v7.CardView.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
 		<Target Name="BeforeBuild">
