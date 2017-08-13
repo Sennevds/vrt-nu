@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StevenVolckaert.VrtNu.Core"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StevenVolckaert.VrtNu.Android", "src\StevenVolckaert.VrtNu.Android\StevenVolckaert.VrtNu.Android.csproj", "{61C2129F-5AE1-4173-902C-68BB065CA6A3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A10F21A8-6B96-4AED-BDE8-C063ED7716C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StevenVolckaert.VrtNu.Core.Tests", "test\StevenVolckaert.VrtNu.Core.Tests\StevenVolckaert.VrtNu.Core.Tests.csproj", "{C958625C-3EDE-4939-B364-2402928039C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{61C2129F-5AE1-4173-902C-68BB065CA6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61C2129F-5AE1-4173-902C-68BB065CA6A3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{61C2129F-5AE1-4173-902C-68BB065CA6A3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C958625C-3EDE-4939-B364-2402928039C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C958625C-3EDE-4939-B364-2402928039C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C958625C-3EDE-4939-B364-2402928039C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C958625C-3EDE-4939-B364-2402928039C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +46,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9C8538CC-69A3-4CE0-B21F-DF8055BD342D} = {AA5E3A56-3783-4156-A246-2AF906990976}
 		{61C2129F-5AE1-4173-902C-68BB065CA6A3} = {AA5E3A56-3783-4156-A246-2AF906990976}
+		{C958625C-3EDE-4939-B364-2402928039C2} = {A10F21A8-6B96-4AED-BDE8-C063ED7716C6}
 	EndGlobalSection
 EndGlobal
