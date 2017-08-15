@@ -35,8 +35,6 @@
 
         public async Task<IEnumerable<LiveChannel>> GetLiveChannelsAsync()
         {
-            // TODO Get URLs from https://services.vrt.be/videoplayer/r/live.json, parse with NewtonSoft.JSON.
-
             using (var httpClient = new HttpClient())
             {
                 var response = await httpClient.GetAsync(_liveChannelsUri);
@@ -44,22 +42,11 @@
                 responseContent = responseContent.AsJsonString();
                 var jObject = JObject.Parse(responseContent);
 
-                var channels = from x in _liveChannels
-                               let url = jObject.SelectToken(x.Value)?.SelectToken("rtsp").ToString()
-                               where url != null
-                               select new LiveChannel { Name = x.Key, Uri = new Uri(url) };
-
-                //var een = jObject.SelectToken("vualto_een")?.SelectToken("rtsp");
-                ////int totalPages = (int)jObject.SelectToken("total_pages");
-                //var canvas = jObject.SelectToken("vualto_canvas")?.SelectToken("rtsp");
-
-                return channels;
+                return from x in _liveChannels
+                       let url = jObject.SelectToken(x.Value)?.SelectToken("rtsp")?.ToString()
+                       where url != null
+                       select new LiveChannel { Name = x.Key, Uri = new Uri(url) };
             }
-
-            //    var liveChannels = from x in _liveChannels
-            //                       select new LiveChannel { Name = x.Key, Uri = x.Value };
-
-            //return liveChannels;
         }
     }
 }
