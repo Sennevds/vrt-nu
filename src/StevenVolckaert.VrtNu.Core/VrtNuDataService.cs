@@ -21,14 +21,13 @@
             }
         }
 
-        // TODO change to an array of tuples
-        private readonly Dictionary<string, string> _liveChannels =
-            new Dictionary<string, string>
+        private readonly (string Name, string JPathToUrl)[] _liveChannels =
+            new (string, string)[]
             {
-                { "Een", "vualto_een" },
-                { "Canvas", "vualto_canvas"  },
-                { "Ketnet", "vualto_ketnet" },
-                { "Sporza", "vualto_sporza" },
+                ("Een", "$.vualto_een.rtsp"),
+                ("Canvas", "$.vualto_canvas.rtsp"),
+                ("Ketnet", "$.vualto_ketnet.rtsp"),
+                ("Sporza", "$.vualto_sporza.rtsp"),
             };
 
         private readonly Uri _liveChannelsUri = new Uri("https://services.vrt.be/videoplayer/r/live.json");
@@ -43,9 +42,9 @@
                 var jObject = JObject.Parse(responseContent);
 
                 return from x in _liveChannels
-                       let url = jObject.SelectToken(x.Value)?.SelectToken("rtsp")?.ToString()
+                       let url = jObject.SelectToken(x.JPathToUrl, errorWhenNoMatch: false)?.ToString()
                        where url != null
-                       select new LiveChannel { Name = x.Key, Uri = new Uri(url) };
+                       select new LiveChannel { Name = x.Name, Uri = new Uri(url) };
             }
         }
     }
