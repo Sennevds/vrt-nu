@@ -2,12 +2,13 @@
 
   <PropertyGroup>
       <Copyright>Copyright (c) 2017 Steven Volckaert</Copyright>
-      <TargetFramework>netstandard1.6</TargetFramework>
+      <TargetFramework>netstandard2.0</TargetFramework>
       <RootNamespace>StevenVolckaert.VrtNu</RootNamespace>
+      <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="HtmlAgilityPack" Version="1.5.1" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.5.5" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="StevenVolckaert.Core" Version="1.1.1" />
     <PackageReference Include="System.ValueTuple" Version="4.4.0" />
