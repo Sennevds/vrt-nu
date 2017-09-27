@@ -10,8 +10,8 @@
     public static class HtmlNodeExtensions
     {
         /// <summary>
-        ///     Returns an array of URLs contained in the srcset attribute of the current node,
-        ///     representing a HTML &lt;img&gt; tag.
+        ///     Returns an array of URLs contained in the srcset attribute of the node,
+        ///     provided that it represents a HTML &lt;img&gt; tag.
         /// </summary>
         /// <param name="htmlNode">
         ///     The <see cref="HtmlNode"/> instance this extension method affects.
